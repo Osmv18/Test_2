@@ -1,10 +1,76 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 22/08/2020, 06:46:29 PM
-    Author     : Osmin Medrano Varela
-*/
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+.form1{
+    background: rgba(0,0,0,.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 20px rgba(0,0,0,.568);
+    color:white;
+}
+
+.form-control{
+    background: rgba(0,0,0,.3);
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+.form-control:focus{
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+
+.enter{
+    background: #222A3F;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white;
+    box-shadow: none;
+    transition: 0.5s ease-in;
+}
+
+.enter:hover{
+    color: white;
+}
+
+.forgot{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.forgot:hover{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.forgot1{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    font-zise: 20px;
+    font-weight: 700!important;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb (0,0,0,.5);
+}
+
+.forgot1:hover{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
