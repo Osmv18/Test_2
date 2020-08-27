@@ -12,19 +12,16 @@
 	    <h1 class="text-light">INICIAR SESIÓN</h1>
 	  </div>
 	  <div class="form-group mx-sm-4 pt-3">
-	    <input type="text" class="form-control" placeholder="Ingrese su correo">
+	    <input type="text" class="form-control" placeholder="Digite su correo">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-	    <input type="text" class="form-control" placeholder="Ingrese su contraseña">
+	    <input type="text" class="form-control" placeholder="Digite su contraseña">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-2">
 	    <input type="submit" class="btn btn-block enter" value="INGRESAR">
 	  </div>
-	  <div class="form-group text-right">
-	    <span><a href="#" class="forgot">Olvidé mi contraseña</a></span>
-	  </div>
 	  <div class="form-group text-center">
-	    <span><a href="?c=register" class="forgot1">REGISTRARSE</a></span>
+	    <span><a href="?c=register" class="forgot">REGISTRARSE</a></span>
 	  </div>
 	</form>
       </div>

@@ -30,6 +30,7 @@ main{
   min-height: calc(100vh - 120.97px - 40px);
 }
 
+/*Login*/
 .form1{
   background: rgba(0,0,0,.1);
   padding: 20px;
@@ -69,20 +70,8 @@ main{
   color: white;
 }
 
+/*Registry*/
 .forgot{
-  color: white;
-  text-decoration-style: none;
-  text-decoration-line: none;
-}
-
-.forgot:hover{
-  color: white;
-  text-decoration-style: none;
-  text-decoration-line: none;
-  cursor: pointer;
-}
-
-.forgot1{
   color: white;
   text-decoration-style: none;
   text-decoration-line: none;
@@ -94,7 +83,7 @@ main{
   background: rgba(0,0,0,.5);
 }
 
-.forgot1:hover{
+.forgot:hover{
   color: white;
   text-decoration-style: none;
   text-decoration-line: none;
