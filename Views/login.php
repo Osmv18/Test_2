@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body background="Images/cyclin.jpg">
-  <div class="container">
+  <div class="container" id="partBody">
     <div class="row justify-content-center pt-5 mt-5 m-1">
       <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 form1">
 	<form action="">
@@ -24,7 +24,7 @@
 	    <span><a href="#" class="forgot">Olvidé mi contraseña</a></span>
 	  </div>
 	  <div class="form-group text-center">
-	    <span><a href="" class="forgot1">REGISTRARSE</a></span>
+	    <span><a href="?c=register" class="forgot1">REGISTRARSE</a></span>
 	  </div>
 	</form>
       </div>

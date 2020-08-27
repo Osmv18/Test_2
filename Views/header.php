@@ -22,6 +22,10 @@
             <li class="blogsNews">
                 <a class="nav-link" href="?c=nuevoProducto" >Ingresar Producto</a>
             </li>
+	    
+	    <li class="blogsNews">
+                <a class="nav-link" href="?c=login">Login</a>
+            </li>
 
           </ul>                 
         </div>

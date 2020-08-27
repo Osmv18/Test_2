@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="CSS/Style.css">
 </head>
 <body>
-  
     <?php include 'Views/header.php'; ?>
     <main>
       <?php
