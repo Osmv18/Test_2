@@ -4,6 +4,18 @@ body{
     background-attachment: fixed;
 }
 
+/*Header*/
+header{
+  background-color: #9b9b9b;
+}
+header nav a:hover{                
+  cursor: pointer;
+  color: #ffffff;                
+}
+header nav a{
+  color: #000000;
+}
+
 .form1{
     background: rgba(0,0,0,.1);
     padding: 20px;
@@ -73,4 +85,13 @@ body{
     text-decoration-style: none;
     text-decoration-line: none;
     cursor: pointer;
+}
+
+/*Footer*/
+footer{
+  background-color: #9b9b9b;
+  bottom: 0;
+  height: 35px;
+  color: white;
+  padding: 70px;
 }
