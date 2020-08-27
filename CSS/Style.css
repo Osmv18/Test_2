@@ -1,90 +1,104 @@
 body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*Header*/
 header{
   background-color: #9b9b9b;
 }
+
 header nav a:hover{                
   cursor: pointer;
   color: #ffffff;                
 }
+
 header nav a{
   color: #000000;
 }
 
+/*Content margen of header*/
+#partBody{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+/*Footer always down*/
+main{
+  min-height: calc(100vh - 120.97px - 40px);
+}
+
 .form1{
-    background: rgba(0,0,0,.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 0 20px rgba(0,0,0,.568);
-    color:white;
+  background: rgba(0,0,0,.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 20px rgba(0,0,0,.568);
+  color:white;
 }
 
 .form-control{
-    background: rgba(0,0,0,.3);
-    border-style: none;
-    transition: 0.5s ease-in;
-    outline: none;
-    box-shadow: none;
+  background: rgba(0,0,0,.3);
+  border-style: none;
+  transition: 0.5s ease-in;
+  outline: none;
+  box-shadow: none;
 }
 .form-control:focus{
-    background: none;
-    box-shadow: none;
-    outline: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .form-control::placeholder{
-    color: white;
+  color: white;
 }
 
 .enter{
-    background: #222A3F;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 700!important;
-    color: white;
-    box-shadow: none;
-    transition: 0.5s ease-in;
+  background: #222A3F;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700!important;
+  color: white;
+  box-shadow: none;
+  transition: 0.5s ease-in;
 }
 
 .enter:hover{
-    color: white;
+  color: white;
 }
 
 .forgot{
-    color: white;
-    text-decoration-style: none;
-    text-decoration-line: none;
+  color: white;
+  text-decoration-style: none;
+  text-decoration-line: none;
 }
 
 .forgot:hover{
-    color: white;
-    text-decoration-style: none;
-    text-decoration-line: none;
-    cursor: pointer;
+  color: white;
+  text-decoration-style: none;
+  text-decoration-line: none;
+  cursor: pointer;
 }
 
 .forgot1{
-    color: white;
-    text-decoration-style: none;
-    text-decoration-line: none;
-    font-zise: 20px;
-    font-weight: 700!important;
-    border: 2px solid white;
-    padding: 10px;
-    border-radius: 10px;
-    background: rgb (0,0,0,.5);
+  color: white;
+  text-decoration-style: none;
+  text-decoration-line: none;
+  font-zise: 20px;
+  font-weight: 700!important;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb (0,0,0,.5);
 }
 
 .forgot1:hover{
-    color: white;
-    text-decoration-style: none;
-    text-decoration-line: none;
-    cursor: pointer;
+  color: white;
+  text-decoration-style: none;
+  text-decoration-line: none;
+  cursor: pointer;
 }
 
 /*Footer*/
