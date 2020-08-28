@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-08-2020 a las 22:10:57
+-- Tiempo de generación: 27-08-2020 a las 23:29:16
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.4.7
 
@@ -18,16 +18,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `inventario`
+-- Base de datos: `sports`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `users`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE `users` (
   `id_user` int(11) NOT NULL,
   `name` varchar(30) NOT NULL,
   `last_name` varchar(50) NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `usuarios` (`id_user`, `name`, `last_name`, `email`, `password`, `admin`) VALUES
+INSERT INTO `users` (`id_user`, `name`, `last_name`, `email`, `password`, `admin`) VALUES
 (1, '', '', 'admin', 'admin', 1),
 (3, 'Nico', 'Morales', '', '123', 0),
 (4, 'Nico', 'Morales', 'nicomorales1597@gmail.com', '123', 0),
@@ -51,9 +51,9 @@ INSERT INTO `usuarios` (`id_user`, `name`, `last_name`, `email`, `password`, `ad
 --
 
 --
--- Indices de la tabla `usuarios`
+-- Indices de la tabla `users`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id_user`);
 
 --
@@ -61,9 +61,9 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT de la tabla `users`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `users`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
