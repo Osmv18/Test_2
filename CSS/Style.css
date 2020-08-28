@@ -22,12 +22,27 @@ header nav a{
 #partBody{
   margin-top: 24px;
   margin-bottom: 24px;
-  color: white;
 }
 
 /*Footer always down*/
 main{
   min-height: calc(100vh - 120.97px - 40px);
+}
+
+/*Home-Carousel*/
+.carousel-item{
+  width: 100%;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .carousel-item {
+    height: 280px;
+  }
 }
 
 /*Login*/
@@ -70,7 +85,7 @@ main{
   color: white;
 }
 
-/*Registry*/
+/*Register*/
 .forgot{
   color: white;
   text-decoration-style: none;
