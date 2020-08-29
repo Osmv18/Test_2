@@ -28,7 +28,7 @@
 	</li>
       </ul>  
       <li class="nav-item form-inline my-2 my-lg-0" id="login_position" >
-	  <a class="nav-link" href="?c=login">Login</a>
+	  <a class="nav-link" href="?c=controller_login">Login</a>
 	</li>
     </div>
   </nav>  

@@ -87,47 +87,25 @@ class users
         return $rows;
     }
     
-    /**
-     * Elimina información de la tabla productos en la base de datos
-     * @param type $id
-     * @return type query
-     */
-    public function delete($id = 0)
-    {
-        $id_user = ($id) ? $id : $this->id_user;
-        $sql = "DELETE FROM usuarios WHERE id_user = '$id_user'";
+     public function userExists($email, $password){  
+        $rows = [];
+        
+        try{
+           $sql = "SELECT * FROM users WHERE email = '$email'and password = '$password'";
         $pdo = new connection();
         $pdo = $pdo->connect();
-        return $pdo->query($sql);
-    }
-
-    /**
-     * Actualiza la información de la tabla productos en la base de datos
-     * @return type query
-     */
-    public function update()
-    {
-        $sql = "UPDATE usuarios SET name = '$this->name', last_name = '$this->last_name',"
-            . " email='$this->email', password='$this->password' WHERE id_user='$this->id_user'";
-        $pdo = new connection();
-        $pdo = $pdo->connect();
-        return $pdo->query($sql);
-    }
-
-    /**
-     * Toma la información de un insert en especifico
-     * @param type $id_prod
-     * @return type nulo
-     */
-    public function get_attribute($id_prod)
-    {
-        try {
-            return $this->$id_prod;
-        } catch (Exception $ex) {
-            return NULL;
+        $var = $pdo->query($sql);
+        
+        foreach ($var->fetchAll() as $value) {
+                $rows [] = new users($value['name'], $value['last_name'], $value['email'], $value['password'], $value['admin'], $value['id_user']);
+            }
+  
+        } catch (PDOException $ex) {
+            die ($ex->getMessage());
         }
-    }
+        
+        return $rows;
+  }
+  
+  
 }
-
-
-
