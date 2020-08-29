@@ -4,9 +4,9 @@ require_once 'Model/Products_Model.php';
 $addProd = new Products_Model();
 //var_dump(apc_fetch('car'));
 
-Stora
 
-if(isset($_GET['id_product'])){
+
+/*if(isset($_GET['id_product'])){
   apc_store("cars", 10);   
   $rows = $addProd->readProduct($_GET['id_product'])[0];
   
@@ -19,5 +19,5 @@ if(isset($_GET['id_product'])){
 }
 
 $v = apc_fetch('cars');
-
+*/
 var_dump($v);
