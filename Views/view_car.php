@@ -7,9 +7,7 @@
 	  <th scope="col">Producto</th>
 	  <th scope="col">Categoria</th>
 	  <th scope="col">Precio</th>
-	  <th scope="col">Existencia</th>
 	  <th scope="col">Descripción</th>
-	  <th scope="col">Acciones</th>
 	</tr>
       </thead>
       <tbody>
@@ -21,16 +19,7 @@
   	  <td><?php echo $value->name_product; ?></td>
   	  <td><?php echo $value->categorie; ?></td>
   	  <td><?php echo $value->price; ?></td>
-  	  <!--Alerta para indicar que hay menos de 5-->
-	    <?php
-	    if ($value->quantity < 5) {
-	      echo '<div class="alert alert-danger" role="alert"> Quedan menos de 5 en ' . $value->name_product . '<br> Cantidad: ' . $value->quantity . '</div>';
-	    }
-	    ?>
-  	  <td><?php echo $value->quantity; ?></td>
   	  <td><div><?php echo $value->description; ?></div></td>
-  	  <td><a href='?c=controller_view_general_product&id_product=<?php echo $value->get_attribute("id_product"); ?>'class="btn btn-info">Ver</a></td>
-  	  <td><a href='?c=controller_add_car&id_product=<?php echo $value->get_attribute("id_product"); ?>' class="btn btn-success">Añadir</a></td>
   	</tr>
 	  <?php
 	}
@@ -39,4 +28,3 @@
     </table>
   </div>
 </div>
-

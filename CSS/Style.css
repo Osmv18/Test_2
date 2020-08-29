@@ -9,7 +9,9 @@ header{
   background: linear-gradient(to right, #092f0b 0%, #627d4d 100%);
   height: 12%;
 }
-
+header nav{
+  height: 75px;
+}
 header nav a:hover{                
   cursor: pointer;
   color: #ffffff;                
