@@ -20,7 +20,7 @@
 	    Tienda
 	  </a>
 	  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	    <a class="dropdown-item" href="#">Ver productos</a>
+	    <a class="dropdown-item" href="?c=controller_view_products">Ver productos</a>
 	    <a class="dropdown-item" href="#">Carrito</a>
 	    <div class="dropdown-divider"></div>
 	    <a class="dropdown-item" href="#">Something else here</a>
