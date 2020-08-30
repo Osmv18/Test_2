@@ -13,6 +13,7 @@
 	include "Controller/" . $_GET['c'] . ".php";
       } else {
 	include 'Views/home.php';
+
       }
       ?>
     </main>
@@ -28,3 +29,4 @@
     crossorigin="anonymous"></script>
   
 </body>
+

@@ -10,21 +10,39 @@
 	  <th scope="col">Descripción</th>
 	</tr>
       </thead>
-      <tbody>
-	<?php
-	foreach ($rows as $value) {
-	  ?>
-  	<tr>
-  	  <th scope="row"><?php echo $value->id_product; ?></th>
-  	  <td><?php echo $value->name_product; ?></td>
-  	  <td><?php echo $value->categorie; ?></td>
-  	  <td><?php echo $value->price; ?></td>
-  	  <td><div><?php echo $value->description; ?></div></td>
-  	</tr>
-	  <?php
-	}
-	?>
+      <tbody id="tbodysalesList">
       </tbody>
     </table>
+    
   </div>
 </div>
+<script>
+  var listSales = JSON.parse(localStorage.getItem("carrito"));
+  console.log(listSales);
+  var table = document.getElementById("tbodysalesList");
+  listSales.forEach(function(json){
+    //Create table "tr"
+    var tr = document.createElement("tr");
+    //Get data
+    var id_product = document.createElement("th");
+    var name_product = document.createElement("th");
+    var categorie = document.createElement("th");
+    var price = document.createElement("th");
+    var description = document.createElement("th");
+    //View data in web
+    id_product.innerHTML = json.id_product;
+    name_product.innerHTML = json.name_product;
+    categorie.innerHTML = json.categorie;
+    price.innerHTML = json.price;
+    description.innerHTML = json.description;
+    //add elements
+    table.appendChild(tr);
+    tr.appendChild(id_product);
+    tr.appendChild(name_product);
+    tr.appendChild(categorie);
+    tr.appendChild(price);
+    tr.appendChild(description);
+    
+  });
+  
+</script>

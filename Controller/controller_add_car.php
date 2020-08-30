@@ -1,23 +1,25 @@
+<script>
+  function addCarrito(lista) {
+    var carrito = JSON.parse(localStorage.getItem("carrito"));
+    carrito.push(lista);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }
+</script>
 <?php
 //Add sales car/ only add
 require_once 'Model/Products_Model.php';
 $addProd = new Products_Model();
-//var_dump(apc_fetch('car'));
-
-
-
-/*if(isset($_GET['id_product'])){
-  apc_store("cars", 10);   
+$lista = "";
+if (isset($_GET['id_product'])) {
   $rows = $addProd->readProduct($_GET['id_product'])[0];
-  
-  array_push(apc_fetch('car'), "L!");
-  
+  $lista = json_encode((array) $rows);
+  echo '<script>
+      var data = ' . $lista . ';
+      addCarrito(data);
+    </script>';
   include 'Controller/controller_view_products.php';
-}else{
- // $rows = $addProd->readProduct()[0];
+} else {
+  $rows = $addProd->readProduct()[0];
   include 'Views/view_car.php';
 }
-
-$v = apc_fetch('cars');
-*/
-var_dump($v);
+?>

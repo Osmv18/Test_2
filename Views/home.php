@@ -2,39 +2,39 @@
 <!--<div class="container-fluid" id="partBody">
   <div class="row" id="carouselGeneral">
     <div class="col-xs-12 col-sm-12 col-md-9">-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-	  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-	</ol>
-	<div class="carousel-inner">
-	  <!-- #Dato: Al momento de colocar la imagen debe de ser en JPG no en JPEG -->
-	  <div class="carousel-item active">
-	    <img src="Images/Sport_1.jpg" class="d-block img-fluid" alt="img1"/>
-	  </div>
-	  <div class="carousel-item">
-	    <img src="Images/Sport_2.jpg" class="d-block img-fluid" alt="img2">
-	  </div>
-	  <div class="carousel-item">
-	    <img src="Images/Sport_3.jpg" class="d-block img-fluid" alt="img3">
-	  </div>
-	  <div class="carousel-item">
-	    <img src="Images/Sport_4.jpg" class="d-block img-fluid" alt="img4">
-	  </div>
-	</div>
-	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Anterior</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Siguiente</span>
-	</a>
-      </div>
-    <!--</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <!-- #Dato: Al momento de colocar la imagen debe de ser en JPG no en JPEG -->
+    <div class="carousel-item active">
+      <img src="Images/Sport_1.jpg" class="d-block img-fluid" alt="img1"/>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Sport_2.jpg" class="d-block img-fluid" alt="img2">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Sport_3.jpg" class="d-block img-fluid" alt="img3">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Sport_4.jpg" class="d-block img-fluid" alt="img4">
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+<!--</div>
+</div>
 </div>-->
 <div class="container" id="partBody">
   <div class="row">
@@ -66,4 +66,7 @@
     </div>
   </div>
 </div>
-
+<!--remove items from sales car-->
+<script>
+  localStorage.removeItem("carrito");
+</script>

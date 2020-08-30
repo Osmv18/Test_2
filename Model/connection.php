@@ -10,7 +10,7 @@ class connection {
   private $std;
   
   public function __construct() {
-    $this->std = "mysql:dbname=".DB_NAME;
+    $this->std = "mysql:dbname=".DB_NAME.";charset=utf8";
   }
   public function connect(){
     try{
