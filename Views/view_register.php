@@ -18,13 +18,14 @@
 	    <input type="text" name="last_name" class="form-control" placeholder="Apellido">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-	    <input type="text" name="email" class="form-control" placeholder="Correo electronico">
+	    <input type="text" name="email" class="form-control" placeholder="Correo electronico" >
+            
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
 	    <input type="text" name="password" class="form-control" placeholder="Contraseña">
 	  </div>
 	  <div class="form-group text-center">
-              <button type="submit" class="forgot1">REGISTRATE</button>
+              <button type="submit" class="forgot">REGISTRATE</button>
 	  </div>
 	</form>
       </div>
