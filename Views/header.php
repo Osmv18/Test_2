@@ -28,8 +28,11 @@
 	</li>
       </ul>  
       <li class="nav-item form-inline my-2 my-lg-0" id="login_position" >
-	  <a class="nav-link" href="?c=controller_login">Login</a>
-	</li>
+	<a class="nav-link" href="?c=controller_login">Login</a>
+      </li>
+      <li class="nav-item form-inline my-2 my-lg-0" id="login_position" >
+	<a class="nav-link" href="?c=controller_register">Registrarse</a>
+      </li>
     </div>
   </nav>  
 </header>
