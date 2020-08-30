@@ -1,3 +1,13 @@
+<?php
+session_start();
+$_SESSION["User"] = "";
+$data = [];
+if(!isset($_SESSION["User"]))
+{
+    $data = $_SESSION["User"];
+}
+?>
+
 <!-- Header-->
 <header class="container-fluid" id="header">
   <nav class="navbar navbar-expand-lg container">
@@ -28,7 +38,14 @@
 	</li>
       </ul>  
       <li class="nav-item form-inline my-2 my-lg-0" id="login_position" >
-	<a class="nav-link" href="?c=controller_login">Login</a>
+	<a class="nav-link" href="?c=controller_login"><?php
+                                                       if ($data->name = NULL){
+                                                           echo $data->name;
+                                                       }else{
+                                                           echo "login";
+                                                       }
+                                                       ?>
+        </a>
       </li>
       <li class="nav-item form-inline my-2 my-lg-0" id="login_position" >
 	<a class="nav-link" href="?c=controller_register">Registrarse</a>
