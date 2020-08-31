@@ -76,7 +76,8 @@ class categories
     public function delete_categ($id = 0)
     {
         $id_categorie = ($id) ? $id : $this->id_categorie;
-        $sql = "DELETE FROM categories WHERE id_categorie = 'id_categorie'";
+        $sql = "DELETE FROM categories WHERE id_categorie = '$id_categorie'";
+        echo $sql;
         $pdo = new connection();
         $pdo = $pdo->connect();
         return $pdo->query($sql);
@@ -108,5 +109,3 @@ class categories
         }
     }
 }
-
-

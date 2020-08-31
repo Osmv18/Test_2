@@ -51,6 +51,7 @@ class products
             $sql = "INSERT INTO products (id_categorie, name_product, price, quantity, description)"
                 . "VALUES ('$this->id_categorie', '$this->name_product', '$this->price', '$this->quantity', '$this->description')";
 
+            echo $sql;
             $pdo = new connection();
             $pdo = $pdo->connect();
             return $pdo->query($sql);
@@ -99,7 +100,7 @@ class products
             $sql = "SELECT * FROM products";
             $pdo = new connection();
             $pdo = $pdo->connect();
-            if ($id_categoria) {
+            if ($id_categorie) {
                 $sql .= " WHERE id_categorie='$id_categorie'";
             }
             $result = $pdo->query($sql);
@@ -120,7 +121,7 @@ class products
      */
     public function delete($id = 0)
     {
-        $id_prod = ($id) ? $id : $this->id_prod;
+        $id_product = ($id) ? $id : $this->id_product;
         $sql = "DELETE FROM products WHERE id_product = '$id_product'";
         $pdo = new connection();
         $pdo = $pdo->connect();
