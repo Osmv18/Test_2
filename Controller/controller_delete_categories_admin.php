@@ -1,6 +1,6 @@
 <?php
-include "model/categories.php";
+include "model/admin_categories.php";
 $delete_categories = new categories("", $_GET['$id_categorie']);
 $delete_categories->delete_categ();
-include 'view/Categorias.php';
+include 'Views/view_categories_admin.php';
 

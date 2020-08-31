@@ -7,17 +7,17 @@
             <table class="table">
                 <tbody>
                 <th scope="row">Categoria:</th>
-                <td><?php echo $row->categories ?></td>
+                <td><?php echo $row->name_categorie ?></td>
                 </tbody>
             </table>
         </div>
         <div class="card-footer bg-transparent border-success">
-            <a href="?c=mostrar_categoria"> Volver</a>
+            <a href="?c=controller_show_categories_admin"> Volver</a>
             <div class="text-center">
-                <a href="?c=prod_categoria&id_categoria=<?php echo $row->get_attribute("id_categoria"); ?>"> Ver
+                <a href="?c=controller_prod_categories_admin&id_categorie=<?php echo $row->get_attribute("id_categorie"); ?>"> Ver
                     Producto</a>
                 <div class="text-right">
-                    <a href="?c=actualizar_categ&id_categoria=<?php echo $row->get_attribute("id_categoria"); ?>">
+                    <a href="?c=controller_update_categ_admin&id_categorie=<?php echo $row->get_attribute("id_categorie"); ?>">
                         Editar</a>
                 </div>
             </div>

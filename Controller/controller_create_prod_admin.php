@@ -1,10 +1,10 @@
 <?php
 include 'model/admin_products.php';
 if ($_POST) {
-    $form = new products($_POST['name_product'], $_POST['id_categorie'], $_POST['price'], $_POST['quiantity'], $_POST['description']);
+    $form = new products($_POST['name_product'], $_POST['id_categorie'], $_POST['price'], $_POST['quantity'], $_POST['description']);
     $form->create();
-    include "view/correcto.php";
+    include "Views/view_correct_admin.php";
 } else {
-    include "view/error.php";
+    include "Views/view_error_admin.php";
 }
 

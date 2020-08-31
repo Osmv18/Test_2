@@ -1,2 +1,2 @@
-<?php include 'view/form_categ.php' ?>
+<?php include 'Views/view_form_categ_admin.php' ?>
 

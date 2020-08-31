@@ -15,7 +15,7 @@
 	    <input type="text" name="email" class="form-control" placeholder="Digite su correo">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-	    <input type="text" name="password" class="form-control" placeholder="Digite su contraseña">
+	    <input type="password" name="password" class="form-control" placeholder="Digite su contraseña">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-2">
 	    <input type="submit" class="btn btn-block enter" value="INGRESAR">

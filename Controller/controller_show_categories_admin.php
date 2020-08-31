@@ -1,2 +1,2 @@
-<?php include 'view/Categories.php' ?>
+<?php include 'Views/view_categories_admin.php' ?>
 

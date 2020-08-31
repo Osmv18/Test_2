@@ -4,9 +4,9 @@ if ($_POST) {
     $update_Categorie = new categories($_POST['name_categorie'], $_POST['id_categorie']);
     $update_Categorie->update_categ();
     $rows = $update_Categorie->read_categ();
-    include "view/Categorias.php";
+    include "Views/view_categories_admin.php";
 } else {
     $update_Categorie = new categories();
     $row = $update_Categorie->read_categ($_GET['id_categorie'])[0];
-    include "view/actualizar_categoria.php";
+    include "Views/view_update_categorie_admin.php";
 }

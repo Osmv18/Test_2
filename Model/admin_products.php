@@ -15,7 +15,7 @@ class products
     public $id_categorie;
     public $name_categorie;
     public $price;
-    public $quiantity;
+    public $quantity;
     public $description;
 
     /**
@@ -27,7 +27,7 @@ class products
      * @param type $pdescription descriptión of product
      * @param type $pid_product is table code
      */
-    public function __construct($pname_product = "", $pid_categorie = "", $pprice = "", $pquiantity = "", $pdescription = "", $id_product = 0)
+    public function __construct($pname_product = "", $pid_categorie = "", $pprice = "", $pquantity = "", $pdescription = "", $pid_product = 0)
     {
         $this->id_product = $pid_product;
         $this->id_categorie = $pid_categorie;
@@ -37,7 +37,7 @@ class products
         }
         $this->name_product = $pname_product;
         $this->price = $pprice;
-        $this->quiantity = $pquiantity;
+        $this->quantity = $pquantity;
         $this->description = $pdescription;
     }
 
@@ -48,8 +48,8 @@ class products
     public function create()
     {
         try {
-            $sql = "INSERT INTO products (id_categorie, name_product, price, quiantity, description)"
-                . "VALUES ('$this->id_categorie', '$this->name_product', '$this->price', '$this->quiantity', '$this->description')";
+            $sql = "INSERT INTO products (id_categorie, name_product, price, quantity, description)"
+                . "VALUES ('$this->id_categorie', '$this->name_product', '$this->price', '$this->quantity', '$this->description')";
 
             $pdo = new connection();
             $pdo = $pdo->connect();
@@ -78,7 +78,7 @@ class products
             }
             $result = $pdo->query($sql);
             foreach ($result->fetchAll() as $value) {
-                $rows [] = new products($value['name_product'], $value['id_categorie'], $value['price'], $value['quiantity'], $value['description'], $value['id_product']);
+                $rows [] = new products($value['name_product'], $value['id_categorie'], $value['price'], $value['quantity'], $value['description'], $value['id_product']);
             }
         } catch (PDOException $ex) {
             die ($ex->getMessage());
@@ -134,7 +134,7 @@ class products
     public function update()
     {
         $sql = "UPDATE products SET name_product = '$this->name_product', id_categorie = '$this->id_categorie', price = '$this->price',"
-            . " quiantity='$this->quiantity', description='$this->description' WHERE id_product='$this->id_product'";
+            . " quantity='$this->quantity', description='$this->description' WHERE id_product='$this->id_product'";
         $pdo = new connection();
         $pdo = $pdo->connect();
         return $pdo->query($sql);

@@ -1,1 +1,1 @@
-<?php include 'view/Form.php' ?>
+<?php include 'Views/view_form_admin.php' ?>

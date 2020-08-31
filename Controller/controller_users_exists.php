@@ -10,7 +10,7 @@ foreach ($users as $rol){
 }
 if(empty($users)== false){
     if($admin == true){
-        include 'Views/views_products_admin.php';
+        include 'Views/view_principal_admin.php';
     }else{
         include 'Views/home.php';
     }

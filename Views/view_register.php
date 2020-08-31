@@ -22,7 +22,7 @@
             
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-	    <input type="text" name="password" class="form-control" placeholder="Contraseña">
+              <input type="password" name="password" class="form-control" placeholder="Contraseña">
 	  </div>
 	  <div class="form-group text-center">
               <button type="submit" class="forgot">REGISTRATE</button>
