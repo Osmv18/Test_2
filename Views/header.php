@@ -31,27 +31,8 @@
 	<a class="nav-link" href="?c=controller_login">Login
         </a>
       </li>
-      <li class="nav-item form-inline my-2 my-lg-0" id="login_position" >
-	<a class="nav-link" href="?c=controller_register">Registrarse</a>
+	<a class="nav-link" href="?c=controller_register"></a>
       </li>
-    </div>
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="?c=controller_view_create_product_admin">Ingresar Producto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="?c=controller_create_c_admin">Ingresar Categoria</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false">Paginas</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="?c=controller_show_products_admin">Productos</a>
-                    <a class="dropdown-item" href="?c=controller_show_categories_admin">Categoria</a>
-                </div>
-            </li>
-        </ul>
     </div>
   </nav>  
 </header>

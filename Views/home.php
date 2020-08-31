@@ -1,3 +1,4 @@
+<?php include 'Views/header.php'; ?>
 <!-- Carousel 1186*381-->
 <!--<div class="container-fluid" id="partBody">
   <div class="row" id="carouselGeneral">
@@ -66,6 +67,7 @@
     </div>
   </div>
 </div>
+<?php include 'Views/footer.php'; ?>
 <!--remove items from sales car-->
 <script>
   localStorage.removeItem("carrito");

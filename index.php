@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="CSS/Style.css">
 </head>
 <body>
-    <?php include 'Views/header.php'; ?>
     <main>
       <?php
       if (isset($_GET['c'])) {
@@ -17,7 +16,6 @@
       }
       ?>
     </main>
-    <?php include 'Views/footer.php'; ?>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 	    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

@@ -1,3 +1,4 @@
+<?php include 'Views/view_header_admin.php'; ?>
 <div class="starter-template">
 
     <div class="block">

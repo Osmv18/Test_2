@@ -1,3 +1,4 @@
+<?php include 'Views/header.php'; ?>
 <br>
 <div class="container" id="partMainProduc">
   <div class="row">
@@ -26,3 +27,4 @@
       </div>
   </div>  
 </div>
+<?php include 'Views/footer.php'; ?>
