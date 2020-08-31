@@ -97,8 +97,10 @@ main{
   transition: 0.5s ease-in;
   outline: none;
   box-shadow: none;
+  color:white;
 }
 .form-control:focus{
+  color:white;
   background: none;
   box-shadow: none;
   outline: none;
