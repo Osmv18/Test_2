@@ -41,15 +41,15 @@ class users
      */
     public function create()
     {
-        try {
-            $sql = "INSERT INTO usuarios (name, last_name, email, password, admin)"
-                . "VALUES ('$this->name', '$this->last_name', '$this->email', '$this->password', '$this->admin')";
-            $pdo = new connection();
-            $pdo = $pdo->connect();
-            return $pdo->query($sql);
-        } catch (PDOException $ex) {
-            echo $ex->getMessage();
-        }
+      try{
+	$sql = "INSERT INTO usuarios (name, last_name, email, password, admin)"
+	    . "VALUES ('$this->name', '$this->last_name', '$this->email', '$this->password', '$this->admin')";
+	$pdo = new connection();
+	$pdo = $pdo->connect();
+	return $pdo->query($sql);
+      } catch (PDOException $ex) {
+	echo $ex->getMessage();
+      }
 
     }
 

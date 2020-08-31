@@ -1,8 +1,3 @@
-<head>
-  <title>REGISTER</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 <body background="Images/cyclin.jpg">
   <div class="container" id="partBody">
     <div class="row justify-content-center pt-5 mt-5 m-1">
@@ -12,20 +7,20 @@
 	    <h1 class="text-light">REGISTRARSE</h1>
 	  </div>
 	  <div class="form-group mx-sm-4 pt-3">
-	    <input type="text" name="name" class="form-control" placeholder="Nombre">
+	    <input type="text" name="name" id="name" class="form-control" placeholder="Nombre">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-	    <input type="text" name="last_name" class="form-control" placeholder="Apellido">
+	    <input type="text" name="last_name" id="lastName" class="form-control" placeholder="Apellido">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-	    <input type="text" name="email" class="form-control" placeholder="Correo electronico" >
+	    <input type="text" name="email" id="email" class="form-control" placeholder="Correo electronico" >
             
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-              <input type="password" name="password" class="form-control" placeholder="Contraseña">
+	    <input type="password" name="password"  id="password" class="form-control" placeholder="Contraseña">
 	  </div>
 	  <div class="form-group text-center">
-              <button type="submit" class="forgot">REGISTRATE</button>
+              <button type="submit" class="forgot">REGISTRARSE</button>
 	  </div>
 	</form>
       </div>
