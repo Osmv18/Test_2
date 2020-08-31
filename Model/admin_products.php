@@ -100,7 +100,7 @@ class products
             $sql = "SELECT * FROM products";
             $pdo = new connection();
             $pdo = $pdo->connect();
-            if ($id_categoria) {
+            if ($id_categorie) {
                 $sql .= " WHERE id_categorie='$id_categorie'";
             }
             $result = $pdo->query($sql);
