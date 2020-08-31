@@ -48,7 +48,7 @@
                    aria-expanded="false">Paginas</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="?c=controller_show_products_admin">Productos</a>
-                    <a class="dropdown-item" href="?c=controller_show_categories">Categoria</a>
+                    <a class="dropdown-item" href="?c=controller_show_categories_admin">Categoria</a>
                 </div>
             </li>
         </ul>

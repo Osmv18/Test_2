@@ -16,14 +16,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php include 'controller/controller_read_categories_admin.php' ?>
-                <?php foreach ($rows_categorie as $row) { ?>
+                <?php foreach ($row as $rows) { ?>
                     <tr>
-                        <td><?php echo $row->id_categorie; ?></td>
-                        <td><?php echo $row->name_categorie; ?></td>
+                        <td><?php echo $rows->id_categorie; ?></td>
+                        <td><?php echo $rows->name_categorie; ?></td>
                         <td>
-                            <a href="?c=controller_view_categories_admin&id_categorie=<?php echo $row->get_attribute("id_categorie"); ?>">Ver</a>
-                            <a href="?c=controller_delete_categories_admin&id_categorie=<?php echo $row->get_attribute("id_categorie"); ?>">Borrar</a>
+                            <a href="?c=controller_view_categories_admin&id_categorie=<?php echo $rows->get_attribute("id_categorie"); ?>">Ver</a>
+                            <a href="?c=controller_delete_categories_admin&id_categorie=<?php echo $rows->get_attribute("id_categorie"); ?>">Borrar</a>
                         </td>
                     </tr>
                 <?php } ?>
