@@ -22,8 +22,6 @@
 	  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 	    <a class="dropdown-item" href="?c=controller_view_products">Ver productos</a>
 	    <a class="dropdown-item" href="?c=controller_add_car">Ver Carrito</a>
-	    <div class="dropdown-divider"></div>
-	    <a class="dropdown-item" href="#">Something else here</a>
 	  </div>
 	</li>
       </ul>  

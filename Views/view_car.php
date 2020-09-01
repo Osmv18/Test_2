@@ -14,8 +14,9 @@
       <tbody id="tbodysalesList">
       </tbody>
     </table>
-
   </div>
+  <!-- Improve to project. Not found-->
+  <a  type="button" class="btn btn-success">Comprar</a>
 </div>
 <script>
   var listSales = JSON.parse(localStorage.getItem("carrito"));
@@ -43,7 +44,5 @@
     tr.appendChild(categorie);
     tr.appendChild(price);
     tr.appendChild(description);
-
   });
-
 </script>
