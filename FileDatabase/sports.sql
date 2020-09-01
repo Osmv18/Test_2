@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-09-2020 a las 21:49:45
+-- Tiempo de generación: 01-09-2020 a las 22:50:55
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.4.7
 
@@ -42,7 +42,8 @@ INSERT INTO `categories` (`id_categorie`, `name_categorie`) VALUES
 (4, 'Puños'),
 (5, 'Bicicletas'),
 (9, 'Cascos'),
-(10, 'Rodilleras');
+(10, 'Rodilleras'),
+(11, 'Futbol');
 
 -- --------------------------------------------------------
 
@@ -73,7 +74,15 @@ INSERT INTO `products` (`id_product`, `name_product`, `id_categorie`, `price`, `
 (9, 'TSG Evolution Solid Color Casco Skateboard', 9, 32680, 7, 'Con el casco Evolution, TSG te ofrece uno de los cascos más finos del mercado, gracias a su corte ajustado y de perfil bajo. Los impactos contra el cemento pueden ser tremendos, por lo que está equipado con una carcasa exterior de ABS y espuma EPS en su interior. ¡Así tu cabeza estará bien protegida en todo momento! Para mantener un ajuste perfecto y cómodo, TSG ha diseñado este casco con forma anatómica para que se ajuste a tu cabeza mejor que nunca. TSG ha eliminado los puntos de presión excesivos para que ni notes que lo llevas puesto. Además sus 14 aperturas de ventilación mantendrán tu cabeza bien seca y fresca durante todas tus sesiones.'),
 (10, 'Guantes Giant Luminosos Largos', 1, 20566, 8, 'ILUMINAR EL CAMINO. Comodidad, visibilidad y protección contra los elementos. Lo obtienes todo con la innovadora serie Illume de Giant. Cada pieza presenta detalles reflectantes, por lo que permanece visible en situaciones de poca luz.'),
 (11, 'Bicicleta Giant TCR ADV 2 Disc SE (2021)', 5, 1836500, 3, 'Entrenar, correr, llevarlo al límite. Ya sea que esté atacando el campo o cavando en busca de un nuevo PR, el nuevo disco avanzado TCR es más liviano, rígido y rápido con una configuración estratégica del tubo aerodinámico, mayor espacio libre de los neumáticos y tecnología de freno de disco integrada.'),
-(12, 'Casco Spiuk Eleo', 9, 61698, 14, '“Cómodo” y “seguro”. Dos adjetivos que escuchamos al preguntar a un ciclista por su casco ideal. “Estética” y “precio” también suelen aparecer. Ninguno de ellos es ajeno al casco Eleo.');
+(12, 'Casco Spiuk Eleo', 9, 61698, 14, '“Cómodo” y “seguro”. Dos adjetivos que escuchamos al preguntar a un ciclista por su casco ideal. “Estética” y “precio” también suelen aparecer. Ninguno de ellos es ajeno al casco Eleo.'),
+(13, 'Official Matchball (OMB)', 11, 23000, 43, 'Este es el balón original del juego, que también se usa en la Bundesliga o para la Copa del Mundo. Tiene un precio (PVP) de unos 130 € y tiene excelentes características de juego y vuelo. Además, es muy duradero, si lo cuidas bien.'),
+(14, 'Nike Magia, Adidas Competition, Adidas Training Pro', 11, 21000, 20, 'La serie Competición y la serie Magia tienen calidad de balón. Esto ya lo revela el sello Fifa Quality Pro, que también lleva las bolas oficiales del juego. Sin embargo, son solo la mitad del precio de los originales. Entonces obtienes una pelota de competición por unos 40 € y estrictamente hablando tiene una pelota de partido frente a él.'),
+(15, 'League (LGE), Top Training, Top Replique, Hybrid Training, Strike', 11, 25000, 15, 'Tales bolas son una “copia” del original. Aquí, la parte superior es más barata y la bola no está pegada, sino soldada térmicamente. Es genial como balón de entrenamiento, pero es muy vulnerable si no te importa bien. El precio es de unos 30 €.\r\n\r\n'),
+(16, 'Training (TRN), Top Glider\r\n', 11, 23000, 15, 'Estas bolas se imitan al original. Cuestan alrededor de 25 € y están hechos de una parte superior a un precio razonable y están cosidos. Pero tienen una gran ventaja: ¡una sensación de pelota! La superficie está bien acolchada y permite movimientos finos de filigrana. Las características de vuelo dejan mucho que desear porque la pelota se desgasta muy rápido. El Top Glider es un poco mejor que el Glider.\r\n\r\n'),
+(17, 'Club (CLB), Glider, Nike Pitch\r\n', 11, 22000, 7, 'Las bolas con esta designación son incluso más baratas que las siguientes mejores. Cuestan alrededor de € 20 y generalmente son particularmente suaves. Sin embargo, no los recomiendo porque no puedes entrenar bien con ellos o se rompen rápidamente.\r\n\r\n'),
+(18, 'Match Junior, Light, S-Light, Lightweight\r\n', 11, 23000, 15, 'Una pelota liviana generalmente pesa 290 o 350 gramos, mientras que una pelota de fútbol normal pesa alrededor de 420 gramos. El punto es que los niños (hasta el U13) pueden jugar mejor con una pelota más ligera que con una pesada. En qué joven qué bola es la correcta, lo descubrirás en la tabla a continuación.'),
+(19, 'Training Sportivo, Hardground (HG)\r\n', 11, 34000, 21, 'Esto se refiere a una “bola de tierra dura”. Esto es muy resistente a la abrasión en su superficie y es muy adecuado para jugar en grava u hormigón.'),
+(20, 'Futsal, Sala\r\n', 11, 42000, 74, 'Estas son las llamadas bolas de fútbol sala. Tienen su propio tamaño y rebotan mucho menos que un balón de fútbol ordinario. Se usan en el salón y se juegan de acuerdo con las reglas del fútbol sala. Los costos van desde € 20 por una pelota de entrenamiento hasta € 80 por una pelota de partido.\r\n\r\n');
 
 -- --------------------------------------------------------
 
@@ -152,13 +161,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `salescar`
