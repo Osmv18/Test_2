@@ -1,5 +1,4 @@
-<body background='Images/back9.jpg'>
-    <?php include 'Views/header.php'; ?>
+<?php include 'Views/header.php'; ?>
 <div class="container" id="tablaProductos">
   <div class="col-xs-12 col-sm-12 col-md-8">
     <table class="table">
@@ -15,16 +14,14 @@
       <tbody id="tbodysalesList">
       </tbody>
     </table>
-    
+
   </div>
 </div>
-</body>
-<?php include 'Views/footer.php'; ?>
 <script>
   var listSales = JSON.parse(localStorage.getItem("carrito"));
   console.log(listSales);
   var table = document.getElementById("tbodysalesList");
-  listSales.forEach(function(json){
+  listSales.forEach(function (json) {
     //Create table "tr"
     var tr = document.createElement("tr");
     //Get data
@@ -46,7 +43,7 @@
     tr.appendChild(categorie);
     tr.appendChild(price);
     tr.appendChild(description);
-    
+
   });
-  
+
 </script>

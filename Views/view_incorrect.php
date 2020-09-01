@@ -1,11 +1,8 @@
-<body background='Images/back9.jpg'>
-    <?php include 'Views/header.php'; ?>
+<?php include 'Views/header.php'; ?>
 <div class="alert alert-success" role="alert">
-    <h4 class="alert-heading">¡Ups!</h4>
-    <p>Usuario o contraseña incorrecta, favor intente nuevamente.</p>
-    <p>Error con el envio del correo.</p>
-    <hr>
-    <p>Pulsa el boton de login para volver al inicio de sesión.</p>
+  <h4 class="alert-heading">¡Ups!</h4>
+  <p>Usuario o contraseña incorrecta, favor intente nuevamente.</p>
+  <p>Error con el envio del correo.</p>
+  <hr>
+  <p>Pulsa el boton de login para volver al inicio de sesión.</p>
 </div>
-</body>
-<?php include 'Views/footer.php'; ?>

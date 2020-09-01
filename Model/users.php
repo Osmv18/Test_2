@@ -42,7 +42,7 @@ class users
     public function create()
     {
       try{
-	$sql = "INSERT INTO usuarios (name, last_name, email, password, admin)"
+	$sql = "INSERT INTO users (name, last_name, email, password, admin)"
 	    . "VALUES ('$this->name', '$this->last_name', '$this->email', '$this->password', '$this->admin')";
 	$pdo = new connection();
 	$pdo = $pdo->connect();
@@ -50,7 +50,6 @@ class users
       } catch (PDOException $ex) {
 	 error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
       }
-
     }
 
     /**
