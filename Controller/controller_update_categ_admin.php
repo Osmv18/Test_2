@@ -3,7 +3,7 @@ include 'model/admin_categories.php';
 if ($_POST) {
     $update_Categorie = new categories($_POST['name_categorie'], $_POST['id_categorie']);
     $update_Categorie->update_categ();
-    $rows = $update_Categorie->read_categ();
+    $row = $update_Categorie->read_categ();
     include "Views/view_categories_admin.php";
 } else {
     $update_Categorie = new categories();

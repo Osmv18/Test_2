@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Descripcion para el usuario
+ * Description for the user
  *
  * @author Nicole
  */

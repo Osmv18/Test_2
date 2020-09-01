@@ -50,8 +50,6 @@ class products
         try {
             $sql = "INSERT INTO products (id_categorie, name_product, price, quantity, description)"
                 . "VALUES ('$this->id_categorie', '$this->name_product', '$this->price', '$this->quantity', '$this->description')";
-
-            echo $sql;
             $pdo = new connection();
             $pdo = $pdo->connect();
             return $pdo->query($sql);
