@@ -36,7 +36,7 @@ class categories
             $pdo = $pdo->connect();
             return $pdo->query($sql);
         } catch (PDOException $ex) {
-            echo $ex->getMessage();
+            error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
         }
 
     }
@@ -62,7 +62,7 @@ class categories
                 $rows [] = new categories($value['name_categorie'], $value['id_categorie']);
             }
         } catch (PDOException $ex) {
-            die($ex->getMessage());
+            derror_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
         }
 
         return $rows;

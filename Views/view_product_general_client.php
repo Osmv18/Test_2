@@ -1,4 +1,5 @@
-<?php include 'Views/header.php'; ?>
+<body background='Images/back9.jpg'>
+    <?php include 'Views/header.php'; ?>
 <br>
 <div class="container" id="partMainProduc">
   <div class="row">
@@ -27,4 +28,5 @@
       </div>
   </div>  
 </div>
+</body>
 <?php include 'Views/footer.php'; ?>

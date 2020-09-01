@@ -6,7 +6,7 @@ body{
 
 /*Header*/
 header{
-  background: linear-gradient(to right, #092f0b 0%, #627d4d 100%);
+  background-color: #572364;
   height: 12%;
 }
 header nav{
@@ -18,7 +18,7 @@ header nav a:hover{
 }
 
 header nav a{
-  color: #000000;
+  color: white;
 }
 
 /*Content margen of header*/
@@ -40,12 +40,6 @@ main{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-@media (max-width: 600px) {
-  .carousel-item {
-    height: 280px;
-  }
 }
 
 /*Login*/
@@ -126,7 +120,7 @@ main{
 
 /*Footer*/
 footer{
-  background: linear-gradient(to right, #092f0b 0%, #627d4d 100%);
+  background-color: #572364;
   bottom: 0;
   height: 35px;
   color: white;

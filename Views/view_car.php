@@ -1,4 +1,5 @@
-<?php include 'Views/header.php'; ?>
+<body background='Images/back9.jpg'>
+    <?php include 'Views/header.php'; ?>
 <div class="container" id="tablaProductos">
   <div class="col-xs-12 col-sm-12 col-md-8">
     <table class="table">
@@ -17,6 +18,7 @@
     
   </div>
 </div>
+</body>
 <?php include 'Views/footer.php'; ?>
 <script>
   var listSales = JSON.parse(localStorage.getItem("carrito"));

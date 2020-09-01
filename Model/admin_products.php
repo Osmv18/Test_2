@@ -23,7 +23,7 @@ class products
      * @param type $pname_product name of product
      * @param type $pid_categorie pass the fk to the products table 
      * @param type $pprice price of the product
-     * @param type $pquiantity is the quantity of the product
+     * @param type $pquantity is the quantity of the product
      * @param type $pdescription descriptión of product
      * @param type $pid_product is table code
      */
@@ -56,7 +56,7 @@ class products
             $pdo = $pdo->connect();
             return $pdo->query($sql);
         } catch (PDOException $ex) {
-            echo $ex->getMessage();
+            error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
         }
 
     }
@@ -82,7 +82,7 @@ class products
                 $rows [] = new products($value['name_product'], $value['id_categorie'], $value['price'], $value['quantity'], $value['description'], $value['id_product']);
             }
         } catch (PDOException $ex) {
-            die ($ex->getMessage());
+            error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
         }
 
         return $rows;
@@ -108,7 +108,7 @@ class products
                 $rows [] = new products($value['name_product'], $value['id_categorie'], $value['id_product']);
             }
         } catch (PDOException $ex) {
-            die ($ex->getMessage());
+            error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
         }
 
         return $rows;

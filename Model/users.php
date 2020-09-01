@@ -17,13 +17,13 @@ class users
     public $admin;
 
     /**
-     *
-     * @param type $pproducto nombre del producto
-     * @param type $pid_categoria le pasa la fk a la tabla productos
-     * @param type $pprecio es el precio del producto
-     * @param type $pcantidad es la cantidad del producto
-     * @param type $pdescripcion descripción del producto
-     * @param type $pid_prod es codigo de la tabla
+     * 
+     * @param type $pname displays the user's name
+     * @param type $plast_name displays the user's last name
+     * @param type $pemail user's email
+     * @param type $ppassword user's password
+     * @param type $padmin admin user
+     * @param type $pid_user is table code
      */
     public function __construct($pname = "", $plast_name = "", $pemail = "", $ppassword = "", $padmin = false, $pid_user = 0)
     {
@@ -36,7 +36,7 @@ class users
     }
 
     /**
-     * Crea la información en la base de datos
+     * Create the information in the database
      * @return bool
      */
     public function create()
@@ -48,45 +48,43 @@ class users
 	$pdo = $pdo->connect();
 	return $pdo->query($sql);
       } catch (PDOException $ex) {
-	echo $ex->getMessage();
+	 error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
       }
 
     }
 
     /**
-     * Lee la información de la tabla productos en la base de datos
+     * Read the information from the products table in the database
      * @param type $id
-     * @return \producto
+     * @return \products
      */
     public function read($id = 0)
     {
-        $rows = []; // Donde voy a almacenar mis registros en base de datos
+        $rows = [];
         try {
             $sql = "SELECT * FROM usuarios";
             $pdo = new connection();
             $pdo = $pdo->connect();
-            // Si id != 0  devuelve uno en especifico
             if ($id) {
                 $sql .= " WHERE id_user=" . $id;
             }
             $result = $pdo->query($sql);
-            /*
-             * Se recorre mientras tengamos una condicion verdadera
-             * Fetch me devuelve el ultimo registro, cuando vuelve a ejecutarse el arreglo ya tiene un elemento menos
-             * devolviendo un elemento diferente
-             * while ($row  = $result->fetch()){
-             * }
-             */
             foreach ($result->fetchAll() as $value) {
-                $rows [] = new producto($value['name'], $value['last_name'], $value['email'], $value['password'], $value['adimin'], $value['id_user']);
+                $rows [] = new products($value['name'], $value['last_name'], $value['email'], $value['password'], $value['adimin'], $value['id_user']);
             }
         } catch (PDOException $ex) {
-            die ($ex->getMessage());
+             error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
         }
 
         return $rows;
     }
     
+    /**
+     * Validate that the user exists
+     * @param type $email
+     * @param type $password
+     * @return \users
+     */
      public function userExists($email, $password){  
         $rows = [];
         
@@ -101,7 +99,7 @@ class users
             }
   
         } catch (PDOException $ex) {
-            die ($ex->getMessage());
+             error_log("Error en la funcion" . __FUNCTION__ . " en el archivo" . __FILE__ . " con el error " . $ex->getMessage());
         }
         
         return $rows;
