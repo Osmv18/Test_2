@@ -76,6 +76,9 @@ class Products_Model {
     }
     return $rows;
   }
+  public function search($word='') {
+    
+  }
   /**
    * Get element - usually was used with 'id'
    * @param type $name

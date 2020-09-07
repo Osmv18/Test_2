@@ -1,4 +1,3 @@
-<?php include 'Views/view_header_admin.php'; ?>
 <div class="col-md-6 offset-md-3">
   <div class="card my-5 bg-light mb-3">
     <div class="card-header text-center">

@@ -5,7 +5,7 @@
  *
  * @author Nicole
  */
-require_once 'model/connection.php';
+require_once 'Model/connection.php';
 class categories
 {
     public $id_categorie;

@@ -1,4 +1,3 @@
-<?php include 'Views/view_header_admin.php'; ?>
 <form method="POST" action="?c=controller_update_products_admin">
   <div class="block-header">
     <h3 class="block-title">Ingresar nuevo producto</h3>

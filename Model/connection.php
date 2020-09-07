@@ -5,7 +5,7 @@
  *
  * @author admin
  */
-require_once 'model/config.php';
+require_once 'Model/config.php';
 class connection {
   private $std;
   

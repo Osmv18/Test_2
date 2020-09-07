@@ -1,4 +1,3 @@
-<?php include 'Views/view_header_admin.php'; ?>
 <form method="POST" action="?c=controller_update_categ_admin">
   <div class="form-group">
     <label for="id_categorie">Codigo</label>

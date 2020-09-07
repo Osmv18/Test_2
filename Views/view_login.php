@@ -1,3 +1,12 @@
+<script>
+  //El problema esta aqui
+  window.onload = function () {
+    if (!window.location.hash) {
+      window.location = window.location + '#loaded';
+      window.location.reload();
+    }
+  }
+</script>
 <body background="Images/cyclin.jpg">
   <div class="container" id="partBody">
     <div class="row justify-content-center pt-5 mt-5 m-1">
@@ -7,10 +16,10 @@
 	    <h1 class="text-light">INICIAR SESIÓN</h1>
 	  </div>
 	  <div class="form-group mx-sm-4 pt-3">
-	    <input type="text" name="email" class="form-control" placeholder="Digite su correo">
+	    <input type="text" name="email" required="" class="form-control" placeholder="Digite su correo">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-3">
-	    <input type="password" name="password" class="form-control" placeholder="Digite su contraseña">
+	    <input type="password" name="password" required="" class="form-control" placeholder="Digite su contraseña">
 	  </div>
 	  <div class="form-group mx-sm-4 pb-2">
 	    <input type="submit" class="btn btn-block enter" value="INGRESAR">

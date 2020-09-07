@@ -1,4 +1,3 @@
-<?php include 'Views/header.php'; ?>
 <div class="alert alert-success" role="alert">
   <h4 class="alert-heading">¡Ups!</h4>
   <p>Usuario o contraseña incorrecta, favor intente nuevamente.</p>

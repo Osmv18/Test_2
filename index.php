@@ -1,3 +1,4 @@
+
 <head>
   <meta charset="UTF-8">
   <title>Triki - Triki Sports</title>
@@ -5,8 +6,21 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/Style.css">
 </head>
+
 <body>
 
+  <?php
+  if (!isset($_SESSION["user"])) {
+    session_start();
+  }
+  if (($_SESSION == null)) {
+    include 'Views/header.php';
+  } else if ($_SESSION["user"]["admin"] == '1') {
+    include 'Views/view_header_admin.php';
+  } else if ($_SESSION["user"]["admin"] == '0') {
+    include 'Views/header.php';
+  }
+  ?>
   <main>
     <?php
     if (isset($_GET['c'])) {

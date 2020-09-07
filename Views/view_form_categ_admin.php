@@ -1,4 +1,3 @@
-<?php include 'Views/view_header_admin.php'; ?>
 <form method="POST" action="?c=controller_create_categorie_admin">
   <div class="form-group">
     <label for="name_categorie">Categoria</label>

@@ -5,8 +5,8 @@
  *
  * @author Nicole
  */
-require_once 'model/connection.php';
-require_once 'model/admin_categories.php';
+require_once 'Model/connection.php';
+require_once 'Model/admin_categories.php';
 
 class products
 {
@@ -19,13 +19,13 @@ class products
     public $description;
 
     /**
-     *
-     * @param type $pname_product name of product
-     * @param type $pid_categorie pass the fk to the products table 
-     * @param type $pprice price of the product
-     * @param type $pquantity is the quantity of the product
-     * @param type $pdescription descriptión of product
-     * @param type $pid_product is table code
+     *Method construct products
+     * @param String $pname_product name of product
+     * @param Int $pid_categorie pass the fk to the products table 
+     * @param Int $pprice price of the product
+     * @param Int $pquantity is the quantity of the product
+     * @param String $pdescription descriptión of product
+     * @param Int $pid_product is table code
      */
     public function __construct($pname_product = "", $pid_categorie = "", $pprice = "", $pquantity = "", $pdescription = "", $pid_product = 0)
     {
@@ -61,7 +61,7 @@ class products
 
     /**
      * Read the information from the products table in the database
-     * @param type $id
+     * @param Int $id
      * @return /products
      */
     public function read($id = 0)
@@ -88,7 +88,7 @@ class products
     
     /**
      * Show the products of a category
-     * @param type $id_categorie
+     * @param Int $id_categorie
      * @return /products
      */
     public function prod_categories($id_categorie = 0)
@@ -114,8 +114,8 @@ class products
 
     /**
      * Delete information from the products table in the database
-     * @param type $id
-     * @return type query
+     * @param Int $id
+     * @return pdo query
      */
     public function delete($id = 0)
     {
@@ -128,7 +128,7 @@ class products
 
     /**
      * Updates the information in the products table in the database
-     * @return type query
+     * @return pdo query
      */
     public function update()
     {
@@ -141,7 +141,7 @@ class products
 
     /**
      * Take the information of a specific insert
-     * @param type $id_product
+     * @param Ind $id_product
      * @return type NULL
      */
     public function get_attribute($id_product)

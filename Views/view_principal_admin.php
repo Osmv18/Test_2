@@ -1,4 +1,12 @@
-<?php include 'Views/view_header_admin.php'; ?>
+<script>
+  //El problema esta aqui
+  window.onload = function () {
+    if (!window.location.hash) {
+      window.location = window.location + '#loaded';
+      window.location.reload();
+    }
+  }
+</script>
 <div class="starter-template">
   <div class="block">
     <div class="block-header">

@@ -29,16 +29,15 @@
 	<a class="nav-link" href="?c=controller_login">Login
         </a>
       </li>
-	<a class="nav-link" href="?c=controller_register"></a>
+      <a class="nav-link" href="?c=controller_register"></a>
       </li>
     </div>
   </nav>  
 </header>
 <!--data storage in a variable for sales list-->
 <script>
-  if(localStorage.getItem("carrito") === null){
+  if (localStorage.getItem("carrito") === null) {
     var json = [];
     localStorage.setItem("carrito", JSON.stringify(json));
   }
-  
 </script>
